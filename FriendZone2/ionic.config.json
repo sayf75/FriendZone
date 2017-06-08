@@ -1,0 +1,11 @@
+{
+  "name": "FriendZone2",
+  "app_id": "",
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "https://api-python3f.herokuapp.com/"
+    }
+  ]
+}

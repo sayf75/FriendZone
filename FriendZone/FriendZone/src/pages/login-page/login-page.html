@@ -1,0 +1,26 @@
+<ion-content class="background">
+  <ion-card>
+    <ion-card-header>
+      FriendZone
+    </ion-card-header>
+    <ion-card-content>
+      <form (ngSubmit)="register()" #registerForm="ngForm">
+      <ion-list no-line>
+        <ion-item>
+          <ion-input type="text" placeholder="Username"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="password" placeholder="Password"></ion-input>
+        </ion-item>
+          <a>Vous avez oublié votre mot de passe ?  <b>Cliquez ici</b></a>
+          <button ion-button block outline  color="light">Connexion</button>
+          <p>OU</p>
+          <button ion-button block color="facebook">
+            <ion-icon name="logo-facebook"></ion-icon> Login with facebook
+          </button>
+      </ion-list>
+    </form>
+    </ion-card-content>
+  </ion-card>
+  <button (click)="registerpage()" ion-button clear full color="light">Pas encore de compte ? Inscrivez-vous</button>
+</ion-content>
